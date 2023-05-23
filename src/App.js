@@ -1,7 +1,7 @@
 import React,{ useState } from 'react';
 import './App.css';
+import Footer from './components/Footer';
 import Form from './components/Form';
-import Main from './components/Main';
 import Maintwo from './components/Maintwo';
 import Thankyou from './components/Thankyou';
 function App() {
@@ -13,13 +13,12 @@ function App() {
     <div className="App">
       <div>
       {
-        !submit ? <Form onSubmit={handleFormSubmit}/> : <Thankyou/>
+          !submit ? <Form onSubmit={handleFormSubmit}/> : <Thankyou/>
       }
       </div>
-      <Main />
       <Maintwo/>
+      <Footer/>
     </div>
   );
 }
-
 export default App;
